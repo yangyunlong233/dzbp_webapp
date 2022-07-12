@@ -1,0 +1,73 @@
+/* menu */
+.layout-menu {
+  text-align: center;
+}
+.layout-menu .menu {
+  margin: 1vh 2vw 0;
+  display: inline-block;
+  width: 7.6vh;
+  height: 7.6vh;
+}
+.layout-menu .menu01 {
+  background-image: url(../images/menu/menu_011.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.layout-menu .menu02 {
+  background-image: url(../images/menu/menu_021.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.layout-menu .menu03 {
+  background-image: url(../images/menu/menu_031.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.layout-menu .menu04 {
+  background-image: url(../images/menu/menu_041.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.layout-menu .menu05 {
+  background-image: url(../images/menu/menu_051.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.layout-menu .menu06 {
+  background-image: url(../images/menu/menu_061.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.layout-menu .menu07 {
+  background-image: url(../images/menu/menu_071.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.layout-menu .menu01.current,
+.layout-menu .menu01:hover {
+  background-image: url(../images/menu/menu_010.svg);
+}
+.layout-menu .menu02.current,
+.layout-menu .menu02:hover {
+  background-image: url(../images/menu/menu_020.svg);
+}
+.layout-menu .menu03.current,
+.layout-menu .menu03:hover {
+  background-image: url(../images/menu/menu_030.svg);
+}
+.layout-menu .menu04.current,
+.layout-menu .menu04:hover {
+  background-image: url(../images/menu/menu_040.svg);
+}
+.layout-menu .menu05.current,
+.layout-menu .menu05:hover {
+  background-image: url(../images/menu/menu_050.svg);
+}
+.layout-menu .menu06.current,
+.layout-menu .menu06:hover {
+  background-image: url(../images/menu/menu_060.svg);
+}
+.layout-menu .menu07.current,
+.layout-menu .menu07:hover {
+  background-image: url(../images/menu/menu_070.svg);
+}

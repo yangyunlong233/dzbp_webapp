@@ -1,0 +1,88 @@
+/* menu */
+.layout-menu {
+    text-align: center;
+
+    .menu {
+        margin: 1vh 2vw 0;
+        display: inline-block;
+        width: 7.6vh;
+        height: 7.6vh;
+    }
+
+    .menu01 {
+        background-image: url(../images/menu/menu_011.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .menu02 {
+        background-image: url(../images/menu/menu_021.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .menu03 {
+        background-image: url(../images/menu/menu_031.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .menu04 {
+        background-image: url(../images/menu/menu_041.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .menu05 {
+        background-image: url(../images/menu/menu_051.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .menu06 {
+        background-image: url(../images/menu/menu_061.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .menu07 {
+        background-image: url(../images/menu/menu_071.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .menu01.current,
+    .menu01:hover {
+        background-image: url(../images/menu/menu_010.svg);
+    }
+
+    .menu02.current,
+    .menu02:hover {
+        background-image: url(../images/menu/menu_020.svg);
+    }
+
+    .menu03.current,
+    .menu03:hover {
+        background-image: url(../images/menu/menu_030.svg);
+    }
+
+    .menu04.current,
+    .menu04:hover {
+        background-image: url(../images/menu/menu_040.svg);
+    }
+
+    .menu05.current,
+    .menu05:hover {
+        background-image: url(../images/menu/menu_050.svg);
+    }
+
+    .menu06.current,
+    .menu06:hover {
+        background-image: url(../images/menu/menu_060.svg);
+    }
+
+    .menu07.current,
+    .menu07:hover {
+        background-image: url(../images/menu/menu_070.svg);
+    }
+}

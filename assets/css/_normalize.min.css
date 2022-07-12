@@ -1,0 +1,6 @@
+/*!
+ * Author: ch233
+ * Last update: 2020-05-03
+ * Version: 1.0
+ * Normalize CSS default properties
+ */a,body,div,h1,h2,h3,h4,h5,h6,html,i,img,li,ol,p,span,ul{margin:0;padding:0}*{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}a:hover,a:link,a:visited{text-decoration:none}html{font-size:10px}body{font-family:Helvetica,Arial,sans-serif;color:#1b1b1b}a,div,h1,h2,h3,h4,h5,h6,i,p,span{font-size:1.2rem;font-weight:400;font-style:normal}li,ol,ul{list-style-type:none}img{border:0}b,i,span{font-style:normal}

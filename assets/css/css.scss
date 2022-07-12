@@ -1,0 +1,225 @@
+@import "./_normalize.scss";
+@import "./_fonts.scss";
+@import "./_first.scss";
+@import "./_menu.scss";
+@import "./_home.scss";
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+
+/* components */
+.component {
+
+    &-bottom {
+        position: fixed;
+        bottom: 2vh;
+        right: 1vw;
+    }
+
+    &-about,
+    &-config {
+        display: inline-block;
+        margin: 0 10px;
+
+        img,
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            height: 1.6vh;
+            color: #fff;
+        }
+    }
+}
+
+/* layout */
+.layout {
+    &-container {
+        position: fixed;
+        top: 50px;
+        left: 50px;
+        right: 50px;
+        bottom: calc(10vh + 80px);
+        // background: rgba(red, .2);
+    }
+
+    &-box2x2 {
+        width: calc((100% - 150px) / 6 * 2 + 30px);
+        height: calc((100% - 120px) / 5 * 2 + 30px);
+        background: #fff;
+    }
+
+    &-box2x1 {
+        width: calc((100% - 150px) / 6 * 2 + 30px);
+        height: calc((100% - 120px) / 5 * 1);
+        background: #fff;
+    }
+
+    &-box2x5 {
+        width: calc((100% - 150px) / 6 * 2 + 30px);
+        height: calc((100% - 120px) / 5 * 5 + 120px);
+        background: #fff;
+    }
+
+    &-box2x4 {
+        width: calc((100% - 150px) / 6 * 2 + 30px);
+        height: calc((100% - 120px) / 5 * 4 + 90px);
+        background: #fff;
+    }
+
+    &-box2x3 {
+        width: calc((100% - 150px) / 6 * 2 + 30px);
+        height: calc((100% - 120px) / 5 * 3 + 60px);
+        background: #fff;
+    }
+
+    &-box4x5 {
+        width: calc((100% - 150px) / 6 * 4 + 90px);
+        height: calc((100% - 120px) / 5 * 5 + 120px);
+        background: #fff;
+    }
+
+    &-menu {
+        position: fixed;
+        left: 50px;
+        right: 50px;
+        bottom: 50px;
+        // background: rgba(red, .2);
+        height: 10vh;
+    }
+}
+
+/* call */
+.call {
+
+    &-part1,
+    &-part2 {
+        position: absolute;
+        border-radius: 6px;
+    }
+
+    &-part1 {
+        top: calc((100% - 120px) / 5 * 2 + 60px);
+        left: 0;
+
+        .title {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .avantar {
+            position: absolute;
+            top: 5vh;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fff;
+            border-radius: 100%;
+
+            img {
+                padding: 3vh;
+                height: 10vh;
+                width: 10vh;
+            }
+        }
+
+        .name {
+            text-align: center;
+            margin: 9vh 3vw 0;
+            font-size: 3vh;
+            font-family: sh_b;
+        }
+
+        .id {
+            text-align: center;
+            margin: 3vh 3vw 0;
+            padding: 1vh;
+            font-size: 2vh;
+            font-family: sh_r;
+            background: rgba(61, 190, 0, 0.1);
+            border: 1px solid #3DBE00;
+            border-radius: 6px;
+            color: #3DBE00;
+        }
+    }
+
+    &-part2 {
+        top: 0;
+        left: calc((100% - 150px) / 6 * 2 + 60px);
+        background: rgba(#026378, .7);
+        border-radius: 6px;
+
+        .img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: 6px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .msg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            .tx1,
+            .tx2 {
+                font-family: sh_r;
+                font-size: 2.5vh;
+                color: #fff;
+            }
+
+            .tx1 {
+                position: absolute;
+                top: 3vh;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .tx2 {
+                position: absolute;
+                bottom: 3vh;
+                left: 50%;
+                transform: translateX(-50%);
+
+
+                span {
+                    font-size: 3.2vh;
+                    font-family: sh_b;
+                    vertical-align: middle;
+                    display: inline-block;
+                }
+
+                img {
+                    margin-right: .5vw;
+                    vertical-align: middle;
+                    display: inline-block;
+                    height: 4vh;
+                }
+            }
+        }
+
+        .back {
+            
+        }
+    }
+}

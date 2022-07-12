@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/css.css">
+    <script src="./assets/js/echarts.js"></script>
+</head>
+
+<body>
+
+    <!-- Main Layout -->
+    <div class="layout-container">
+        <!-- left -->
+        <div class="layout-box2x2 home-part1">
+            <div class="title">三年级6班</div>
+            <div class="info-techer">
+                <p class="lt">班主任</p>
+                <p class="dt">郑志浩</p>
+            </div>
+            <div class="info-student">
+                <p class="lt">班级人数</p>
+                <p class="dt">60人</p>
+            </div>
+            <div class="info-check">
+                <p class="lt">签到人数</p>
+                <p class="dt">57人</p>
+            </div>
+        </div>
+        <div class="layout-box2x2 home-part2">
+            <div class="duty">
+                <div class="tt">今日值日生</div>
+                <div class="type1">
+                    <span>擦黑板</span>
+                    <span>周洁、秦伟生</span>
+                </div>
+                <div class="type2">
+                    <span>卫　生</span>
+                    <span>张丽、杨伟康、康俊</span>
+                </div>
+            </div>
+            <div class="check">
+                <div id="Pie"></div>
+                <div class="info">
+                    <p>应到：<span>60</span>人</p>
+                    <p>实到：<span>57</span>人</p>
+                </div>
+                <div class="label">
+                    <p class="type1"><i></i>迟到：<span>1</span>人</p>
+                    <p class="type2"><i></i>请假：<span>2</span>人</p>
+                    <p class="type3"><i></i>旷课：<span>0</span>人</p>
+                </div>
+            </div>
+        </div>
+        <div class="layout-box2x1 home-part3">
+            <img src="./assets/images/call.svg">
+            <span>拨打电话</span>
+        </div>
+        <!-- middle -->
+        <div class="layout-box2x5 home-part4">
+            <div class="title">
+                <span class="tt">今日课表</span>
+                <span class="more"><img src="./assets/images/more.svg"></span>
+            </div>
+            <div class="table">
+                <div class="line"></div>
+                <ul>
+                    <li>
+                        <i></i>
+                        <span>第一节</span>
+                        <span>08:10-08:50</span>
+                        <span class="lesson">语文</span>
+                        <span>于文浩</span>
+                    </li>
+                    <li>
+                        <i></i>
+                        <span>第一节</span>
+                        <span>08:10-08:50</span>
+                        <span class="lesson">语文</span>
+                        <span>于文浩</span>
+                    </li>
+                    <li class="current">
+                        <i></i>
+                        <span>第一节</span>
+                        <span>08:10-08:50</span>
+                        <span class="lesson">语文</span>
+                        <span>于文浩</span>
+                    </li>
+                    <li>
+                        <i></i>
+                        <span>第一节</span>
+                        <span>08:10-08:50</span>
+                        <span class="lesson">语文</span>
+                        <span>于文浩</span>
+                    </li>
+                    <li>
+                        <i></i>
+                        <span>第一节</span>
+                        <span>08:10-08:50</span>
+                        <span class="lesson">语文</span>
+                        <span>于文浩</span>
+                    </li>
+                    <li>
+                        <i></i>
+                        <span>第一节</span>
+                        <span>08:10-08:50</span>
+                        <span class="lesson">语文</span>
+                        <span>于文浩</span>
+                    </li>
+                    <li>
+                        <i></i>
+                        <span>第一节</span>
+                        <span>08:10-08:50</span>
+                        <span class="lesson">语文</span>
+                        <span>于文浩</span>
+                    </li>
+                    <li>
+                        <i></i>
+                        <span>第一节</span>
+                        <span>08:10-08:50</span>
+                        <span class="lesson">语文</span>
+                        <span>于文浩</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="current-teach">
+                <div class="avantar"><img src="./assets/images/teacher_w.png"></div>
+                <div class="name">张丽娟 老师</div>
+                <div class="lesson">品德 10:10-10:50</div>
+                <div class="tag"><img src="./assets/images/tag_on_teach.svg"></div>
+            </div>
+        </div>
+        <!-- right -->
+        <div class="layout-box2x1 home-part5">
+            <div class="date">
+                <p class="time">09:42</p>
+                <p class="day">2021年12月03日 星期三</p>
+            </div>
+            <div class="weather">
+                <p class="icon"><img src="./assets/images/weather.svg"></p>
+                <p class="tx">
+                    <span>晴转多云</span>
+                    <span>16~18℃</span>
+                </p>
+            </div>
+        </div>
+        <div class="layout-box2x4 home-part6">
+            <div class="title">
+                <span class="tt">校园和班级</span>
+                <span class="more"><img src="./assets/images/more.svg"></span>
+            </div>
+            <ul class="news-list">
+                <li>
+                    <h3>本学期即将结束 带着美好与祝福</h3>
+                    <p>时光转瞬即逝,暑假的生活即将结束,我们又该踏上求学的路,送别了朋友,心中难舍的心情无法用言语表达</p>
+                    <span>2022年7月30日</span>
+                </li>
+                <li>
+                    <h3>2022年入学流程公布2022年入学流程公布2022年入学流程公布</h3>
+                    <p>根据国家、省市有关规定,我市 " 公参民 " 学校（含其他民办义务教育学校，下同）今年转为公办学校的，仍按原方式招生，招生范根据国家、省市有关规定,我市 " 公参民 "
+                        学校（含其他民办义务教育学校，下同）今年转为公办学校的，仍按原方式招生，招生范</p>
+                    <span>2022年7月30日</span>
+                </li>
+            </ul>
+            <ul class="news-imgs">
+                <li><img src="./assets/images/new_imgs_case.png"></li>
+                <li><img src="./assets/images/new_imgs_case.png"></li>
+                <li><img src="./assets/images/new_imgs_case.png"></li>
+                <li><img src="./assets/images/new_imgs_case.png"></li>
+            </ul>
+            <div class="imgs-loading">
+                <div class="all-line"></div>
+                <div class="current-line"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Layout -->
+    <div class="layout-menu">
+        <div class="menu menu01 current"></div>
+        <div class="menu menu02"></div>
+        <div class="menu menu03"></div>
+        <div class="menu menu04"></div>
+        <div class="menu menu05"></div>
+        <div class="menu menu06"></div>
+        <div class="menu menu07"></div>
+    </div>
+
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('Pie'));
+
+        // 指定图表的配置项和数据
+        var option = {
+            color: [
+                '#337DD4',
+                '#E4E4E4'
+            ],
+            title: {
+                text: '98%',
+                subtext: '出勤率',
+                left: 'center',
+                top: '30%'
+            },
+            series: [{
+                name: '出勤率',
+                type: 'pie',
+                radius: ['66%', '82%'],
+                itemStyle: {
+                    borderRadius: 10
+                },
+                label: {
+                    show: false
+                },
+                emphasis: {
+                    scale: false
+                },
+                data: [{
+                        value: 57,
+                        name: '出勤人数'
+                    },
+                    {
+                        value: 3,
+                        name: '未到人数'
+                    }
+                ]
+            }]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+
+</body>
+
+</html>
