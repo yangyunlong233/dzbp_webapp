@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/css.css">
+    <script src="./assets/js/echarts.js"></script>
+</head>
+
+<body>
+
+    <!-- Main Layout -->
+    <div class="layout-container">
+        <!-- left -->
+        <div class="layout-box2x2 home-part1">
+            <div class="title">三年级6班</div>
+            <div class="info-techer">
+                <p class="lt">班主任</p>
+                <p class="dt">郑志浩</p>
+            </div>
+            <div class="info-student">
+                <p class="lt">班级人数</p>
+                <p class="dt">60人</p>
+            </div>
+            <div class="info-check">
+                <p class="lt">签到人数</p>
+                <p class="dt">57人</p>
+            </div>
+        </div>
+        <div class="layout-box2x3 call-part1">
+            <div class="title">
+                <img src="./assets/images/call_title.svg">
+                <div class="avantar">
+                    <img src="./assets/images/student_m.png">
+                </div>
+            </div>
+            <div class="name">王志伟</div>
+            <div class="id">学号：0018288372726261666</div>
+        </div>
+        <!-- middle -->
+        <div class="layout-box4x5 call-part2">
+            <div class="back black">
+                <span><img src="./assets/images/back_black.svg"></span>
+                <span>返回</span>
+            </div>
+            <div class="text-msg">
+                <form>
+                    <textarea></textarea>
+                </form>
+            </div>
+            <div class="mask"></div>
+            <div class="audio-fns">
+                <div class="fn fn5">
+                    <img src="./assets/images/send.svg">
+                    <span>发送</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Layout -->
+    <div class="layout-menu">
+        <div class="menu menu01"></div>
+        <div class="menu menu02"></div>
+        <div class="menu menu03"></div>
+        <div class="menu menu04"></div>
+        <div class="menu menu05 current"></div>
+        <div class="menu menu06"></div>
+        <div class="menu menu07"></div>
+    </div>
+
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('Pie'));
+
+        // 指定图表的配置项和数据
+        var option = {
+            color: [
+                '#337DD4',
+                '#E4E4E4'
+            ],
+            title: {
+                text: '98%',
+                subtext: '出勤率',
+                left: 'center',
+                top: '30%'
+            },
+            series: [{
+                name: '出勤率',
+                type: 'pie',
+                radius: ['66%', '82%'],
+                itemStyle: {
+                    borderRadius: 10
+                },
+                label: {
+                    show: false
+                },
+                emphasis: {
+                    scale: false
+                },
+                data: [{
+                        value: 57,
+                        name: '出勤人数'
+                    },
+                    {
+                        value: 3,
+                        name: '未到人数'
+                    }
+                ]
+            }]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+
+</body>
+
+</html>

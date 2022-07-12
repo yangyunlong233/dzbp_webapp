@@ -507,7 +507,7 @@ b {
 }
 .home-part4 .table ul li {
   position: relative;
-  padding: 1.66vh 0;
+  padding: 1.8vh 0;
   border-bottom: 1px solid #E4E4E4;
 }
 .home-part4 .table ul li i {
@@ -524,7 +524,7 @@ b {
 .home-part4 .table ul li span {
   display: inline-block;
   font-size: 2vh;
-  margin: 0 0.5vw;
+  margin: 0 0.8vw;
   font-family: sh_r;
   color: #777;
 }
@@ -542,7 +542,7 @@ b {
   content: "";
   position: absolute;
   top: -2px;
-  left: -3.8vw;
+  left: -3.7vw;
   right: -2px;
   bottom: -2px;
   background: rgba(2, 184, 184, 0.07);
@@ -566,7 +566,7 @@ b {
   bottom: 1vw;
   left: 0;
   right: 0;
-  height: 11.2vh;
+  height: 11.8vh;
   background: #02B8B8;
   border-radius: 8px;
 }
@@ -876,6 +876,18 @@ body {
   border-radius: 6px;
   color: #3DBE00;
 }
+.call-part1 .user-screen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 8px;
+}
+.call-part1 .user-screen img {
+  width: 100%;
+  height: 100%;
+}
 .call-part2 {
   top: 0;
   left: calc((100% - 150px) / 6 * 2 + 60px);
@@ -930,4 +942,262 @@ body {
   vertical-align: middle;
   display: inline-block;
   height: 4vh;
+}
+.call-part2 .back {
+  position: relative;
+  z-index: 9;
+  margin: 3vh 3vw;
+}
+.call-part2 .back img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2.5vh;
+  top: -0.2vh;
+  position: relative;
+}
+.call-part2 .back span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 2.5vh;
+  font-family: sh_r;
+  color: #fff;
+}
+.call-part2 .back.black span {
+  color: #1b1b1b;
+}
+.call-part2 .contact {
+  margin: 3vh 3vw;
+  text-align: center;
+}
+.call-part2 .contact li {
+  position: relative;
+  margin: 3vh 1.5vw 3vh 1.5vw;
+  display: inline-block;
+  font-size: 0;
+}
+.call-part2 .contact li span {
+  display: inline-block;
+  height: 7.6vh;
+  line-height: 7.6vh;
+  font-size: 2.4vh;
+  color: #1b1b1b;
+  padding: 0 3.5vw;
+  font-family: sh_r;
+}
+.call-part2 .contact li span.name {
+  background: #E2E2E2;
+  border-radius: 6px 0 0 6px;
+  font-family: sh_b;
+}
+.call-part2 .contact li span.mobile {
+  background: #fff;
+  border-radius: 0 6px 6px 0;
+}
+.call-part2 .contact li.current {
+  border: 2px solid #3DBE00;
+  border-radius: 8px;
+}
+.call-part2 .contact li.current span.name {
+  background: #3DBE00;
+  color: #fff;
+}
+.call-part2 .contact li.current span.name:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1vw;
+  width: 3vh;
+  height: 3vh;
+  background-image: url(../images/selected.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.call-part2 .functions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 28vh;
+  background: #fff;
+  text-align: center;
+}
+.call-part2 .functions .fn {
+  margin: 5vh 1.2vw;
+  display: inline-block;
+  width: 12vw;
+  height: 12vh;
+  line-height: 12vh;
+  background: #3DBE00;
+  box-shadow: 0px 4px 8px rgba(61, 190, 0, 0.42);
+  border-radius: 6px;
+  text-align: center;
+}
+.call-part2 .functions .fn img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2.8vh;
+  width: auto;
+  position: relative;
+  top: -0.2vh;
+  margin-right: 0.5vw;
+}
+.call-part2 .functions .fn span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 2.5vh;
+  font-family: sh_b;
+  color: #fff;
+}
+.call-part2 .selected {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2vh;
+  z-index: 9;
+}
+.call-part2 .selected i {
+  display: block;
+  width: 2vw;
+  height: 0.3vh;
+  background: #1b1b1b;
+  margin: 1vh auto;
+  border-radius: 8px;
+}
+.call-part2 .selected span {
+  display: block;
+  font-size: 1.6vh;
+}
+.call-part2 .waitings,
+.call-part2 .audio-calling,
+.call-part2 .audio-msg {
+  position: relative;
+  z-index: 9;
+  margin: 10vh auto 0;
+  text-align: center;
+}
+.call-part2 .waitings p,
+.call-part2 .audio-calling p,
+.call-part2 .audio-msg p {
+  color: #fff;
+}
+.call-part2 .waitings p.info,
+.call-part2 .waitings p.time,
+.call-part2 .audio-calling p.info,
+.call-part2 .audio-calling p.time,
+.call-part2 .audio-msg p.info,
+.call-part2 .audio-msg p.time {
+  font-size: 2vh;
+  font-family: sh_r;
+}
+.call-part2 .waitings p.name,
+.call-part2 .audio-calling p.name,
+.call-part2 .audio-msg p.name {
+  font-size: 2.5vh;
+  font-family: sh_b;
+  margin: 2vh 0;
+}
+.call-part2 .back + .audio-msg {
+  margin: 5vh auto 0;
+}
+.call-part2 .audio-calling p,
+.call-part2 .audio-msg p {
+  color: #1b1b1b;
+}
+.call-part2 .text-msg {
+  position: relative;
+  z-index: 9;
+  margin: 5vh auto 0;
+  width: 54vw;
+}
+.call-part2 .text-msg textarea {
+  width: calc(100% - 4vw - 4px);
+  height: 36vh;
+  padding: 2vh 2vw;
+  border: 2px #BFBFBF solid;
+  background: rgba(0, 0, 0, 0.05);
+  resize: none;
+  border-radius: 8px;
+  font-size: 2.5vh;
+  font-family: sh_r;
+  color: #1b1b1b;
+  line-height: 1.8;
+}
+.call-part2 .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 1;
+}
+.call-part2 .audio-wave {
+  position: relative;
+  z-index: 9;
+  width: calc(100% - 24vw);
+  margin: 8vh 12vw 0;
+  height: 20vh;
+}
+.call-part2 .audio-wave img {
+  width: 100%;
+  height: 100%;
+}
+.call-part2 .customer-screen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 8px;
+  z-index: 2;
+}
+.call-part2 .customer-screen img {
+  width: 100%;
+  height: 100%;
+}
+.call-part2 .mask + .cut span {
+  color: #1b1b1b;
+}
+.call-part2 .cut {
+  position: absolute;
+  bottom: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9;
+}
+.call-part2 .cut img {
+  width: 6vh;
+  height: auto;
+}
+.call-part2 .cut span {
+  display: block;
+  text-align: center;
+  font-size: 1.6vh;
+  color: #fff;
+  font-family: sh_r;
+  margin-top: 1vh;
+}
+.call-part2 .audio-fns {
+  position: absolute;
+  bottom: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9;
+}
+.call-part2 .audio-fns .fn {
+  display: inline-block;
+  margin: 0 1vw;
+}
+.call-part2 .audio-fns .fn img {
+  width: 6vh;
+  height: auto;
+}
+.call-part2 .audio-fns .fn span {
+  display: block;
+  text-align: center;
+  font-size: 1.6vh;
+  color: #1b1b1b;
+  font-family: sh_r;
+  margin-top: 1vh;
 }
