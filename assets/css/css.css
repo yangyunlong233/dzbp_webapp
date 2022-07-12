@@ -754,85 +754,18 @@ b {
   height: 18vh;
 }
 
-html {
-  width: 100vw;
-  height: 100vh;
+@font-face {
+  font-family: sh_r;
+  src: url(../fonts/SourceHanSansCN-Regular.ttf);
 }
-
-body {
-  width: 100vw;
-  height: 100vh;
-  background-image: url(../images/bg.jpg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 100% 100%;
+@font-face {
+  font-family: sh_b;
+  src: url(../fonts/SourceHanSansCN-Bold.ttf);
 }
-
-/* components */
-.component-bottom {
-  position: fixed;
-  bottom: 2vh;
-  right: 1vw;
+@font-face {
+  font-family: sh_l;
+  src: url(../fonts/SourceHanSansCN-Light.ttf);
 }
-.component-about, .component-config {
-  display: inline-block;
-  margin: 0 10px;
-}
-.component-about img,
-.component-about span, .component-config img,
-.component-config span {
-  display: inline-block;
-  vertical-align: middle;
-  height: 1.6vh;
-  color: #fff;
-}
-
-/* layout */
-.layout-container {
-  position: fixed;
-  top: 50px;
-  left: 50px;
-  right: 50px;
-  bottom: calc(10vh + 80px);
-}
-.layout-box2x2 {
-  width: calc((100% - 150px) / 6 * 2 + 30px);
-  height: calc((100% - 120px) / 5 * 2 + 30px);
-  background: #fff;
-}
-.layout-box2x1 {
-  width: calc((100% - 150px) / 6 * 2 + 30px);
-  height: calc((100% - 120px) / 5 * 1);
-  background: #fff;
-}
-.layout-box2x5 {
-  width: calc((100% - 150px) / 6 * 2 + 30px);
-  height: calc((100% - 120px) / 5 * 5 + 120px);
-  background: #fff;
-}
-.layout-box2x4 {
-  width: calc((100% - 150px) / 6 * 2 + 30px);
-  height: calc((100% - 120px) / 5 * 4 + 90px);
-  background: #fff;
-}
-.layout-box2x3 {
-  width: calc((100% - 150px) / 6 * 2 + 30px);
-  height: calc((100% - 120px) / 5 * 3 + 60px);
-  background: #fff;
-}
-.layout-box4x5 {
-  width: calc((100% - 150px) / 6 * 4 + 90px);
-  height: calc((100% - 120px) / 5 * 5 + 120px);
-  background: #fff;
-}
-.layout-menu {
-  position: fixed;
-  left: 50px;
-  right: 50px;
-  bottom: 50px;
-  height: 10vh;
-}
-
 /* call */
 .call-part1, .call-part2 {
   position: absolute;
@@ -1200,4 +1133,83 @@ body {
   color: #1b1b1b;
   font-family: sh_r;
   margin-top: 1vh;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+}
+
+/* components */
+.component-bottom {
+  position: fixed;
+  bottom: 2vh;
+  right: 1vw;
+}
+.component-about, .component-config {
+  display: inline-block;
+  margin: 0 10px;
+}
+.component-about img,
+.component-about span, .component-config img,
+.component-config span {
+  display: inline-block;
+  vertical-align: middle;
+  height: 1.6vh;
+  color: #fff;
+}
+
+/* layout */
+.layout-container {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  right: 50px;
+  bottom: calc(10vh + 80px);
+}
+.layout-box2x2 {
+  width: calc((100% - 150px) / 6 * 2 + 30px);
+  height: calc((100% - 120px) / 5 * 2 + 30px);
+  background: #fff;
+}
+.layout-box2x1 {
+  width: calc((100% - 150px) / 6 * 2 + 30px);
+  height: calc((100% - 120px) / 5 * 1);
+  background: #fff;
+}
+.layout-box2x5 {
+  width: calc((100% - 150px) / 6 * 2 + 30px);
+  height: calc((100% - 120px) / 5 * 5 + 120px);
+  background: #fff;
+}
+.layout-box2x4 {
+  width: calc((100% - 150px) / 6 * 2 + 30px);
+  height: calc((100% - 120px) / 5 * 4 + 90px);
+  background: #fff;
+}
+.layout-box2x3 {
+  width: calc((100% - 150px) / 6 * 2 + 30px);
+  height: calc((100% - 120px) / 5 * 3 + 60px);
+  background: #fff;
+}
+.layout-box4x5 {
+  width: calc((100% - 150px) / 6 * 4 + 90px);
+  height: calc((100% - 120px) / 5 * 5 + 120px);
+  background: #fff;
+}
+.layout-menu {
+  position: fixed;
+  left: 50px;
+  right: 50px;
+  bottom: 50px;
+  height: 10vh;
 }
